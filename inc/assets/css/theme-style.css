@@ -1,0 +1,8 @@
+/*
+ * Mobile Menu
+ */
+@media all and (min-width: 767px) {
+  .slicknav_menu {
+    display: none; } }
+
+/*# sourceMappingURL=theme-style.css.map */

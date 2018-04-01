@@ -1,4 +1,4 @@
-=== WP Bootstrap Starter ===
+=== Paira Starter ===
 
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
 Requires at least: 4.0
@@ -46,7 +46,7 @@ This theme will be an active project which we will update from time to time. Che
 
 = Does this theme support any plugins? =
 
-WP Bootstrap Starter includes support for Infinite Scroll in Jetpack.
+Paira Starter includes support for Infinite Scroll in Jetpack.
 
 == Credits ==
 
@@ -357,7 +357,7 @@ WP Bootstrap Starter includes support for Infinite Scroll in Jetpack.
 * Fix the broken sidebar in the search.php
 
 = 1.2 - Nov 23, 2016 =
-* Change the theme name to WP Bootstrap Starter
+* Change the theme name to Paira Starter
 
 = 1.0 - Nov 13, 2016 =
 * Initial release

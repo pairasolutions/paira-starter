@@ -23,15 +23,16 @@
 
     <body <?php body_class(); ?>>
         <div id="page" class="site">
-            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
+            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'paira-starter' ); ?></a>
 
             <?php do_action( 'paira_header_before' ); ?>
 
-            <header id="masthead" class="site-header navbar-static-top <?php echo Paira_Starter_bg_class(); ?>" role="banner">
+            <header id="masthead" class="site-header navbar-static-top" role="banner">
                 <div class="<?php echo apply_filters( 'paira_container_class', 'container' ); ?>">
                     <nav class="navbar navbar-expand-xl p-0">
                         <div class="navbar-brand">
-                            <?php if ( get_theme_mod( 'Paira_Starter_logo' ) ): ?>
+                            
+                            <?php if ( get_theme_mod( 'Paira_Starter_logo' ) ) : ?>
                                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                                     <img src="<?php echo esc_attr( get_theme_mod( 'Paira_Starter_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                                 </a>
@@ -40,23 +41,19 @@
                             <?php endif; ?>
 
                         </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
 
                         <?php
                         wp_nav_menu( array(
                             'theme_location' => 'primary',
                             'container' => 'div',
                             'container_id' => 'main-nav',
-                            'container_class' => 'collapse navbar-collapse justify-content-end',
+                            'container_class' => 'collapse navbar-collapse justify-content-end primary-nav',
                             'menu_id' => 'paira-menu',
                             'menu_class' => 'navbar-nav',
                             'depth' => 3,
                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                             'walker' => new wp_bootstrap_navwalker()
                         ) );
-                        test();
                         ?>
 
                     </nav>
