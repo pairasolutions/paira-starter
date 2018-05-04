@@ -95,7 +95,7 @@
                 }
                 ?>
                 <section id="paira-welcome" style="background-image: url('<?php echo $bc_img; ?>');">
-                    <div class="container text-center">
+                    <div class="container paira-welcome-inner">
                         <h2 class="welcome-title"><?php echo $page_title; ?></h2>
                         <div class="full-breadcrumb">
                             <?php
