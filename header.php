@@ -64,7 +64,7 @@
 
             <?php if ( !is_front_page() ): ?>
                 <?php
-                $bc_img = get_template_directory_uri() . 'images/default-banner.jpg';
+                $bc_img = get_template_directory_uri() . '/images/default-banner.jpg';
                 $page_title = get_the_title();
                 if ( isset( $post ) ) {
                     $bc_title = get_post_meta( $post->ID, 'breadcrumb_title', true );
